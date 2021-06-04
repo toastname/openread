@@ -1,0 +1,56 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #CC9999;
+    background-size: cover;
+}
+
+.loginBox {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* 实现2D转换 */
+    transform: translate(-50%, -50%);
+}
+
+.title_box {
+    height: 60px;
+    background: url("../images/login_title.png") no-repeat center;
+}
+
+.reg_box {
+    display: none;
+}
+
+.layui-form {
+    padding: 0 40px;
+}
+
+.links {
+    display: flex;
+    /* 从行尾位置开始排列,每行最后一个弹性元素与行尾对齐，其他元素与后一个对齐 */
+    justify-content: flex-end;
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-icon {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.layui-input,
+.layui-textarea {
+    display: block;
+    width: 100%;
+    padding-left: 30px !important;
+}
