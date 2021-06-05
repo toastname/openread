@@ -73,7 +73,7 @@ $(function() {
                     return layer.msg("登录失败！")
                 }
                 layer.msg("登录成功");
-
+                location.href = "index.html";
             }
         })
     })
