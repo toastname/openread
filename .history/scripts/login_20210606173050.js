@@ -1,14 +1,14 @@
 $(function() {
     // 点击“去注册账号”的链接
     $('#link_reg').on('click', function() {
-        $('.login_box').hide()
-        $('.reg_box').show()
+        $('.login-box').hide()
+        $('.reg-box').show()
     })
 
     // 点击“去登录”的链接
     $('#link_login').on('click', function() {
-        $('.login_box').show()
-        $('.reg_box').hide()
+        $('.login-box').show()
+        $('.reg-box').hide()
     })
 
     // 从 layui 中获取 form 对象
@@ -24,7 +24,7 @@ $(function() {
             // 还需要拿到密码框中的内容
             // 然后进行一次等于的判断
             // 如果判断失败,则return一个提示消息即可
-            var pwd = $('.reg_box [name=password]').val()
+            var pwd = $('.reg-box [name=password]').val()
             if (pwd !== value) {
                 return '两次密码不一致！'
             }
@@ -67,7 +67,7 @@ $(function() {
                     // 将登录成功得到的 token 字符串，保存到 localStorage 中
                 localStorage.setItem('token', res.token)
                     // 跳转到后台主页
-                location.href = 'index.html'
+                location.href = '/index.html'
             }
         })
     })

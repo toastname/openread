@@ -16,6 +16,14 @@ a {
     transition: none !important;
 }
 
+.userinfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    user-select: none;
+}
+
 .text-avater {
     display: inline-block;
     width: 40px;
